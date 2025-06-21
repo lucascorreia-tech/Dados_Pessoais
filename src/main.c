@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #include "clean.h"
+#include "pessoas.h"
 
 int main(int argc, char *argv[]) {
 	setlocale(LC_ALL, "pt_bt.UTF-8");
@@ -25,14 +26,19 @@ int main(int argc, char *argv[]) {
 		
 		printf("\nEscolha uma das opções: ");
 		scanf("%d", &option);
+		clean_buffer();
+		clean_window();
 		
 		switch (option){
 			case 1:
-				printf(" incluirPessoa()...");
+				incluir_pessoa();
+				break;
 			case 2:
-				printf(" removePessoa()...");
+				remover_pessoa();
+				break;
 			case 3:
-				printf(" listarPessoa()...");
+				listar_pessoas();
+				break;
 			case 4:
 				printf(" ordenarPessoa()...");
 			case 5:
