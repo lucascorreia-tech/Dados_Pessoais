@@ -10,6 +10,8 @@ int main(int argc, char *argv[]) {
     	setlocale(LC_ALL, "Portuguese_Brazil.1252");  
 	}
 	
+	ler_csv();
+	
 	int option;
 	do{
 		printf("=============================\n");
@@ -40,14 +42,23 @@ int main(int argc, char *argv[]) {
 				listar_pessoas();
 				break;
 			case 4:
-				printf(" ordenarPessoa()...");
+				menu_ordenar();
+				break;
 			case 5:
-				printf(" buscaPessoa()...");
+				menu_buscar(); 
+                break;
 			case 6:
-				printf(" lerGravarPessoa()...");
+				menu_csv();
+				break;
+			case 7:
+				printf("\n Saindo do programa. Até logo!");	
+				break;
 			default:
 				printf("\nOpção inválida!");
-				clean_window();		
+				getchar();
+				break;	
 		}
 	} while (option != 7);
+	
+	return 0;
 }
