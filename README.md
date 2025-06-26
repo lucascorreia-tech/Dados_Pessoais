@@ -1,8 +1,5 @@
 # Documentação Completa do Projeto: Sistema de Gerenciamento de Pessoas em C
 
-**Versão:** 1.0
-**Autor:** (Substitua pelo seu nome)
-
 ## 1. Visão Geral do Projeto
 
 Este documento detalha a arquitetura e as funcionalidades do "Sistema de Gerenciamento de Pessoas", um programa desenvolvido em linguagem C. A aplicação permite realizar operações de cadastro, remoção, listagem, busca e ordenação de registros de pessoas, além de oferecer persistência de dados através de arquivos no formato CSV.
